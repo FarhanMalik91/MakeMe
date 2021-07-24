@@ -26,3 +26,31 @@ class button: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
 }
+extension UIButton {
+    func addRightIcon(image: UIImage) {
+        let imageView = UIImageView(image: image)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+
+        addSubview(imageView)
+
+        let length = CGFloat(15)
+        titleEdgeInsets.left += length
+
+        NSLayoutConstraint.activate([
+            imageView.leadingAnchor.constraint(equalTo: self.titleLabel!.trailingAnchor, constant: 10),
+            imageView.centerYAnchor.constraint(equalTo: self.titleLabel!.centerYAnchor, constant: 0),
+            imageView.widthAnchor.constraint(equalToConstant: length),
+            imageView.heightAnchor.constraint(equalToConstant: length)
+        ])
+    }
+    
+        func alignImageRight() {
+            if UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft {
+                semanticContentAttribute = .forceRightToLeft
+            }
+            else {
+                semanticContentAttribute = .forceLeftToRight
+            }
+        }
+    
+}

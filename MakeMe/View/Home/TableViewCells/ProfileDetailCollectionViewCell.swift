@@ -38,7 +38,7 @@ class ProfileDetailCollectionViewCell: UICollectionViewCell {
         profileImage.layer.cornerRadius = 15
         
         NSLayoutConstraint.activate([
-            containerView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 50.heightRatio),
+            containerView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 30.heightRatio),
             containerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20.widthRatio),
             containerView.heightAnchor.constraint(equalToConstant: 120.heightRatio),
             containerView.widthAnchor.constraint(equalToConstant: 200.widthRatio),
@@ -50,13 +50,13 @@ class ProfileDetailCollectionViewCell: UICollectionViewCell {
             
             profileImage.topAnchor.constraint(equalTo: timeLabel.bottomAnchor, constant: 7.heightRatio),
             profileImage.leadingAnchor.constraint(equalTo: containerView.leadingAnchor , constant: 5.widthRatio),
-            profileImage.heightAnchor.constraint(equalToConstant: 40.heightRatio),
-            profileImage.widthAnchor.constraint(equalToConstant: 30.widthRatio),
+            profileImage.heightAnchor.constraint(equalToConstant: 30),
+            profileImage.widthAnchor.constraint(equalToConstant: 30),
             
             nameLabel.topAnchor.constraint(equalTo: timeLabel.bottomAnchor, constant: 7.heightRatio),
             nameLabel.leadingAnchor.constraint(equalTo: profileImage.trailingAnchor , constant: 7.widthRatio),
             
-            subLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 3.heightRatio),
+            subLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 0.heightRatio),
             subLabel.leadingAnchor.constraint(equalTo: profileImage.trailingAnchor , constant: 7.widthRatio),
 
             

@@ -8,16 +8,26 @@
 import UIKit
 
 class MakeMeTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    //MARK:-UI-Elements
+    let menuLabel = label(text: "", textcolor: .black, font: .setFont(FontName: .popins_regular, fontSize: 20), alignment: .natural)
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setUpUI()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    //MARK:-Helper Functions
+    func setUpUI()
+    {
+        contentView.addSubview(menuLabel)
+        
+        NSLayoutConstraint.activate([
+            menuLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            menuLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor , constant: 40.widthRatio),
+            
+        ])
+        
     }
-
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }

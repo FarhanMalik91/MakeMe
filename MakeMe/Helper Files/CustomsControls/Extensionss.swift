@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-import JGProgressHUD
+
 
 extension UIViewController {
     
@@ -40,23 +40,12 @@ extension UIViewController {
     
     
 }
-let hud = JGProgressHUD()
-extension UIViewController {
-   
-    func showLoadingView(){
-        
-        hud.textLabel.text = "Loading"
-        hud.show(in: self.view)
-    }
-    func dissmissLoadingView(){
-        hud.dismiss()
-    }
-}
 enum fontName : String
 {
     case popins_Bold = "Poppins-Bold"
     case popins_SemiBold = "Poppins-SemiBold"
     case popins_Medium = "Poppins-Medium"
+    case popins_regular = "Poppins-Regular"
     
     
 }

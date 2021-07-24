@@ -16,12 +16,20 @@ class TabBarViewController: UITabBarController {
         tabBar.tintColor = .label
         setUpVc()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.navigationBar.isHidden = false
+    }
 
     private func setUpVc() {
         viewControllers = [createNavBar(for: HomeViewController(), title: "Home", image: UIImage(systemName: "house")!),
-                           createNavBar(for: CartViewController(), title: "Cart", image: UIImage(systemName: "cart")!),
-                           createNavBar(for: ProfileViewController(), title: "Profile", image: UIImage(systemName : "person.fill")!),
-                            createNavBar(for: OderViewController(), title: "Tracking", image: UIImage(systemName: "cart")!)]
+                           createNavBar(for: AppiointmentsViewController(), title: "Appointments", image: UIImage(systemName: "cart")!),
+                           createNavBar(for: PaymentsViewController(), title: "Payments", image: UIImage(systemName : "person.fill")!),
+                            createNavBar(for: ServiceViewController(), title: "Services", image: UIImage(systemName: "cart")!)]
     }
     
     fileprivate func createNavBar(for rootViewController : UIViewController , title : String , image  : UIImage) -> UIViewController{

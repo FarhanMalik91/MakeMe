@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import SDWebImage
+
 
 class Utilities {
     
@@ -53,14 +53,7 @@ class Utilities {
     }
     
 }
-extension UIImageView{
-    func downloadImage(url:String){
-      //remove space if a url contains.
-        let stringWithoutWhitespace = url.replacingOccurrences(of: " ", with: "%20", options: .regularExpression)
-        self.sd_imageIndicator = SDWebImageActivityIndicator.gray
-        self.sd_setImage(with: URL(string: stringWithoutWhitespace), placeholderImage: UIImage())
-    }
-}
+
 extension UIView {
   func dropShadow(offsetX: CGFloat, offsetY: CGFloat, color: UIColor, opacity: Float, radius: CGFloat, scale: Bool = true) {
     layer.masksToBounds = false

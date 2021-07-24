@@ -40,7 +40,8 @@ class userProfileTableViewCell: UITableViewCell {
         containerView.addSubview(viewProfileButton)
         
         //MARK:-Styling
-        profileImage.layer.cornerRadius = 15
+        profileImage.layer.cornerRadius = 37.5
+        profileImage.clipsToBounds = true
         bookButton.alignImageRight()
         
         
@@ -52,8 +53,8 @@ class userProfileTableViewCell: UITableViewCell {
             
             profileImage.centerYAnchor.constraint(equalTo: containerView.centerYAnchor),
             profileImage.trailingAnchor.constraint(equalTo: containerView.trailingAnchor , constant: -20.widthRatio),
-            profileImage.heightAnchor.constraint(equalToConstant: 100.heightRatio),
-            profileImage.widthAnchor.constraint(equalToConstant: 100.widthRatio),
+            profileImage.heightAnchor.constraint(equalToConstant: 75),
+            profileImage.widthAnchor.constraint(equalToConstant: 75),
             
             nameLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 30.heightRatio),
             nameLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 20.widthRatio),

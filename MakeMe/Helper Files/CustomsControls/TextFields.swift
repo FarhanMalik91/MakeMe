@@ -17,7 +17,7 @@ class txtField: UITextField {
         self.textAlignment = .natural
         self.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 0.2682202483)
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.layer.cornerRadius = 15
+        self.layer.cornerRadius = 10
         let padding = UIView(frame: CGRect(x: 0, y: 0, width: 20, height: self.frame.height))
         self.leftView = padding
         self.leftViewMode = .always
