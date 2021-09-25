@@ -10,7 +10,6 @@
 		842586D826A2729B00F6BC1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842586D726A2729B00F6BC1E /* AppDelegate.swift */; };
 		842586DA26A2729B00F6BC1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842586D926A2729B00F6BC1E /* SceneDelegate.swift */; };
 		842586DC26A2729B00F6BC1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842586DB26A2729B00F6BC1E /* ViewController.swift */; };
-		842586DF26A2729B00F6BC1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842586DD26A2729B00F6BC1E /* Main.storyboard */; };
 		842586E126A2729D00F6BC1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842586E026A2729D00F6BC1E /* Assets.xcassets */; };
 		842586E426A2729D00F6BC1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842586E226A2729D00F6BC1E /* LaunchScreen.storyboard */; };
 		842586F126A2744F00F6BC1E /* MainAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842586F026A2744F00F6BC1E /* MainAuthViewController.swift */; };
@@ -79,7 +78,6 @@
 		842586D726A2729B00F6BC1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		842586D926A2729B00F6BC1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		842586DB26A2729B00F6BC1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		842586DE26A2729B00F6BC1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		842586E026A2729D00F6BC1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		842586E326A2729D00F6BC1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		842586E526A2729D00F6BC1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -174,14 +172,12 @@
 		842586D626A2729B00F6BC1E /* MakeMe */ = {
 			isa = PBXGroup;
 			children = (
-				842586EE26A273FB00F6BC1E /* Model */,
 				842586ED26A273F200F6BC1E /* Controller */,
 				842586EC26A273E900F6BC1E /* View */,
 				842586F426A2749B00F6BC1E /* Helper Files */,
 				842586D726A2729B00F6BC1E /* AppDelegate.swift */,
 				842586D926A2729B00F6BC1E /* SceneDelegate.swift */,
 				842586DB26A2729B00F6BC1E /* ViewController.swift */,
-				842586DD26A2729B00F6BC1E /* Main.storyboard */,
 				842586E026A2729D00F6BC1E /* Assets.xcassets */,
 				842586E226A2729D00F6BC1E /* LaunchScreen.storyboard */,
 				842586E526A2729D00F6BC1E /* Info.plist */,
@@ -215,13 +211,6 @@
 				842586EF26A2741600F6BC1E /* Auth */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		842586EE26A273FB00F6BC1E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		842586EF26A2741600F6BC1E /* Auth */ = {
@@ -545,7 +534,6 @@
 				8425873026A2749B00F6BC1E /* Poppins-Italic.ttf in Resources */,
 				8425872126A2749B00F6BC1E /* Poppins-ThinItalic.ttf in Resources */,
 				8425873126A2749B00F6BC1E /* Poppins-MediumItalic.ttf in Resources */,
-				842586DF26A2729B00F6BC1E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,14 +594,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		842586DD26A2729B00F6BC1E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				842586DE26A2729B00F6BC1E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		842586E226A2729D00F6BC1E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -747,12 +727,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VLZLHMFK79;
 				INFOPLIST_FILE = MakeMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Malik.MakeMe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeme2021.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -765,12 +747,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VLZLHMFK79;
 				INFOPLIST_FILE = MakeMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Malik.MakeMe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeme2021.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
